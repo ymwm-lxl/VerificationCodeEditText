@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    android:padding="5dp">
+
+    <!-- 1像素的接近于不显示，真正的验证码输入框 -->
+    <EditText
+        android:id="@+id/v_edit_codeNum"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:inputType="textEmailAddress"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <LinearLayout
+        android:id="@+id/v_ll_codeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/v_img_code0"
+                style="@style/v_cursor" />
+
+            <TextView
+                android:id="@+id/v_tv_code0"
+                style="@style/v_code_tv" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/v_img_code1"
+                style="@style/v_cursor"/>
+
+            <TextView
+                android:id="@+id/v_tv_code1"
+                style="@style/v_code_tv"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/v_img_code2"
+                style="@style/v_cursor"/>
+
+            <TextView
+                android:id="@+id/v_tv_code2"
+                style="@style/v_code_tv"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/v_img_code3"
+                style="@style/v_cursor"/>
+
+            <TextView
+                android:id="@+id/v_tv_code3"
+                style="@style/v_code_tv"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/v_img_code4"
+                style="@style/v_cursor"/>
+
+            <TextView
+                android:id="@+id/v_tv_code4"
+                style="@style/v_code_tv"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/v_img_code5"
+                style="@style/v_cursor"/>
+
+            <TextView
+                android:id="@+id/v_tv_code5"
+                style="@style/v_code_tv"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

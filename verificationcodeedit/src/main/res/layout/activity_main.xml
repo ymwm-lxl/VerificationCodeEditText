@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/v_main_tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/v_main_edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 验证码部分 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 第一个 -->
+            <TextView
+                android:id="@+id/v_main_tv_code1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/v_main_tv_code2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/v_main_tv_code3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/v_main_tv_code4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/v_main_tv_code5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/v_main_tv_code6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_border_bottom_gold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+        <com.xuanluo.verificationcodeedit.VerificationCodeEditText
+            android:id="@+id/v_main_VerificationCodeEditText"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            app:codeTextColor="@color/colorAccent"
+            app:codeTextSize="20sp"
+            app:codeTextBackgroud="@drawable/bg_border_bottom_gold"
+            app:codeCursorImg="@drawable/guangbiao"
+            app:codeCursorHeight="50dp">
+
+        </com.xuanluo.verificationcodeedit.VerificationCodeEditText>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/v_main_btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示"/>
+
+
+</LinearLayout>
